@@ -1,0 +1,69 @@
+<style type="text/css">
+
+div.blocka {
+/* 使えません */
+}
+div.green {
+   height: auto;
+   min-height: 400%;
+   float: left;
+   width: 25%;
+   background-color: #AAFFCC;
+}
+div.blue {
+   height: auto;
+   min-height: 400%;
+   float: left;
+   width: 25%;
+   background-color: #AACCFF;
+}
+div.yellow{
+   height: auto;
+   min-height: 400%;
+   float: left;
+   width: 25%;
+   background-color: #FFFFBB;
+}
+div.pink {
+   height: auto;
+   min-height: 400%;
+   float: left;
+   width: 25%;
+   background-color: #FFDDDD;
+}
+
+#menu div {
+  position: relative;
+}
+
+.arrow_box {
+  display: none;
+  position: relative;
+  padding: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 0px;
+  background: #000;
+  color: #ff0;
+}
+
+.arrow_box:after {
+  position: absolute;
+  bottom: 100%;
+  left: 10%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #000;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+}
+
+span:hover + p.arrow_box {
+  display: block;
+}
+
+</style>
